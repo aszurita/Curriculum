@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANGELO ZURITA</title>
+    <link rel="stylesheet" href="/assets/styles/navbar.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">ANGELO ZURITA</a>
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <span class="sr-only">Toggle menu</span>
+          <svg
+            class="menu-icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <!-- Navigation links -->
+        <div id="menu" class="menu">
+          <a href="#tools" class="nav-link">TOOLS</a>
+          <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+          <a href="#experience" class="nav-link">EXPERIENCE</a>
+          <a href="#presentations" class="nav-link">PRESENTATIONS</a>
+          <a href="#contactme" class="nav-link">CONTACT ME</a>
+          <div class="theme-toggle" onclick="toggleTheme()">
+            <img id="theme-icon-img" width="18" height="18"
+              src="https://img.icons8.com/ios-filled/50/do-not-disturb-2.png"
+              alt="dark-mode-icon" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="/assets/js/darkmode.js"></script>
+  </body>
+</html>

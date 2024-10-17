@@ -42,7 +42,7 @@ function updateThemeIcon() {
   const themeIconImg = document.getElementById("theme-icon-img");
   
   if (darkMode) {
-    themeIconImg.src = "/assets/logos/soleado.png";
+    themeIconImg.src = "./assets/logos/soleado.png";
     themeIconImg.alt = "dark-mode-icon";
     themeIconImg.width = 25;
     themeIconImg.height = 25;
@@ -61,23 +61,23 @@ function updateSocialMediaIcons() {
 
   if (!darkMode) {
     githubImgs.forEach(img => {
-      img.src = "/assets/icons/githubWhite.png";
+      img.src = "./assets/icons/githubWhite.png";
     });
     linkedinImgs.forEach(img => {
-      img.src = "/assets/icons/linkedinWhite.png";
+      img.src = "./assets/icons/linkedinWhite.png";
     });
     xImgs.forEach(img => {
-      img.src = "/assets/icons/xWhite.png";
+      img.src = "./assets/icons/xWhite.png";
     });
   } else {
     githubImgs.forEach(img => {
-      img.src = "/assets/icons/githubBlack.png";
+      img.src = "./assets/icons/githubBlack.png";
     });
     linkedinImgs.forEach(img => {
-      img.src = "/assets/icons/linkedinBlack.png";
+      img.src = "./assets/icons/linkedinBlack.png";
     });
     xImgs.forEach(img => {
-      img.src = "/assets/icons/xBlack.png";
+      img.src = "./assets/icons/xBlack.png";
     });
   }
 }

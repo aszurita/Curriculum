@@ -185,7 +185,7 @@ projects.forEach((project) => {
         githubLink.href = project.github;
         githubLink.target = "_blank";
         const githubImage = document.createElement("img");
-        githubImage.src = "/assets/tools/github.png";
+        githubImage.src = "./assets/tools/github.png";
         githubImage.alt = "GitHub";
         socialMedia.appendChild(githubLink);
         githubLink.appendChild(githubImage);
@@ -196,7 +196,7 @@ projects.forEach((project) => {
         projectLink.href = project.link;
         projectLink.target = "_blank";
         const linkImage = document.createElement("img");
-        linkImage.src = "/assets/tools/link.png";
+        linkImage.src = "./assets/tools/link.png";
         linkImage.alt = "Link";
         socialMedia.appendChild(projectLink);
         projectLink.appendChild(linkImage);

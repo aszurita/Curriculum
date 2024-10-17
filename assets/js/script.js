@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <span class="texthover">L</span>
         <span class="texthover">O</span>
         <span>&nbsp;</span>
-        <img src="/assets/logos/logo.png" alt="Logo" class="logo-img">
+        <img src="./assets/logos/logo.png" alt="Logo" class="logo-img">
         <span>&nbsp;</span>
         <span class="texthover">Z</span>
         <span class="texthover">U</span>
@@ -26,17 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="social-media">
       <div class="social-icon">
         <a href="https://github.com" target="_blank" class="center">
-          <img src="/assets/icons/githubWhite.png" alt="GitHub" id="GitHub" />
+          <img src="./assets/icons/githubWhite.png" alt="GitHub" id="GitHub" />
         </a>
       </div>
       <div class="social-icon">
         <a href="https://linkedin.com" target="_blank" class="center">
-          <img src="/assets/icons/linkedinWhite.png" alt="LinkedIn"  id="LinkedIn"/>
+          <img src="./assets/icons/linkedinWhite.png" alt="LinkedIn"  id="LinkedIn"/>
         </a>
       </div>
       <div class="social-icon">
         <a href="https://twitter.com" target="_blank" class="center">
-          <img src="/assets/icons/xWhite.png" alt="x" id="X" class="xdimension" />
+          <img src="./assets/icons/xWhite.png" alt="x" id="X" class="xdimension" />
         </a>
       </div>
     </div>
@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   Promise.all([
-    loadScript("./assets/js/particles.js"),
-    loadScript("./assets/js/stats.js"),
+    loadScript("../assets/js/particles.js"),
+    loadScript("../assets/js/stats.js"),
   ])
     .then(() => {
       if (window.particlesJS) {

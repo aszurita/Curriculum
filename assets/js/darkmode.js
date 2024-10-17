@@ -99,8 +99,10 @@ function updateFooter(){
   const footer = document.getElementById("footer");
   if (darkMode) {
     footer.classList.add("light-mode-text"); 
+    footer.classList.remove("dark-mode-text");
   } else {
-    footer.classList.add("black-mode-text");
+    footer.classList.remove("light-mode-text"); 
+    footer.classList.add("dark-mode-text");
   }
 }
 

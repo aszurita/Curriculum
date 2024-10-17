@@ -5,7 +5,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 .relative {
@@ -30,8 +37,134 @@ body {
   margin-top: 50px;
 }
 
-
-.logo-img{
+.logo-img {
   width: 40px;
   height: 40px;
+}
+
+.about-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.name-header .texthover:hover {
+  color: #69B3A2;
+}
+
+
+.separator.dark-mode {
+  background-color: white;
+}
+
+
+.intro-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .name-header {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+.name-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem; 
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1; 
+}
+
+.separator {
+  height: 6px;
+  width: 90%;
+  margin: 20px auto; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-icon img {
+  width: 50%; 
+  height: 50%;
+}
+
+.backgroundBlack{
+  background-color: black;
+}
+
+.backgroundWhite{
+  background-color: white;
+}
+
+.colorBlack{
+  color: black; 
+}
+
+.colorWhite{
+  color: white; 
+}
+
+.xdimension{
+  width: 40% !important;
+  height: 40% !important;
+}
+
+.social-icon:hover{
+  background-color: var(--green-calid);
+}
+
+
+.infoHome{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  margin-top: 300px;
 }

@@ -7,22 +7,25 @@ window.onload = function () {
   if (savedDarkMode === "true") {
     darkMode = true;
     document.body.classList.add("dark-mode");
-    updateThemeIcon();
   } else {
     darkMode = false;
-    updateThemeIcon();
   }
+  updateThemeIcon();
+  updateSocialMediaIcons();
+  updateSeparator();
+  updateBackgroundIcon();
 };
 
 function toggleTheme() {
   darkMode = !darkMode;
   document.body.classList.toggle("dark-mode");
 
-  // Guardar el estado en localStorage
   localStorage.setItem("darkMode", darkMode);
   updateThemeIcon();
+  updateSocialMediaIcons();
+  updateSeparator();
+  updateBackgroundIcon();
 
-  // Si el menú está abierto, también cambiar el estado del menú
   if (isMenuOpen) {
     const menu = document.getElementById("menu");
     if (darkMode) {
@@ -37,7 +40,7 @@ function toggleTheme() {
 
 function updateThemeIcon() {
   const themeIconImg = document.getElementById("theme-icon-img");
-
+  
   if (darkMode) {
     themeIconImg.src = "/assets/logos/soleado.png";
     themeIconImg.alt = "dark-mode-icon";
@@ -51,14 +54,58 @@ function updateThemeIcon() {
   }
 }
 
+function updateSocialMediaIcons() {
+  const githubImg = document.getElementById("GitHub");
+  const linkedinImg = document.getElementById("LinkedIn");
+  const xImg = document.getElementById("x");
+
+  if (!darkMode) {
+    githubImg.src = "/assets/icons/githubWhite.png";
+    linkedinImg.src = "/assets/icons/linkedinWhite.png";
+    xImg.src = "/assets/icons/xWhite.png";
+  } else {
+    githubImg.src = "/assets/icons/githubBlack.png";
+    linkedinImg.src = "/assets/icons/linkedinBlack.png";
+    xImg.src = "/assets/icons/xBlack.png";
+  }
+}
+
+function updateSeparator(){
+  const separator = document.getElementById("separator");
+  if (darkMode) {
+    separator.style.background="white";
+  }
+  else {
+    separator.style.background="black";
+  }
+}
+
+function updateBackgroundIcon(){
+  const socialIcons = document.querySelectorAll('.social-icon');
+  socialIcons.forEach(icon => {
+    if (darkMode) {
+      icon.classList.remove("backgroundBlack"); 
+      icon.classList.add("backgroundWhite"); 
+    } else {
+      icon.classList.add("backgroundBlack");
+      icon.classList.remove("backgroundWhite");
+    }
+  });
+}
+
 function toggleMenu() {
   const menu = document.getElementById("menu");
   isMenuOpen = !isMenuOpen;
 
-  // Si darkMode está activo, utiliza la clase para el modo oscuro
   if (darkMode) {
     menu.classList.toggle("menu-open-darkmode");
   } else {
     menu.classList.toggle("menu-open");
   }
 }
+
+
+
+
+// Asociar el evento de clic para cambiar el tema
+document.getElementById("toggle-button").addEventListener("click", toggleTheme);

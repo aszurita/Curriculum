@@ -1,0 +1,87 @@
+.nombre{
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.img-Profile{
+  width: 200px;
+  height: 200px;
+}
+
+.containerExperience{
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+}
+
+.profileInfo{
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px;
+  gap: 5px;
+}
+
+.profileInfo p{
+  font-family: 'Montserrat', sans-serif ;
+}
+
+.frase{
+  color: #808080;
+  margin: 20px 0px ;
+}
+
+
+.experiences{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 58%;
+}
+.experience {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.experience .date {
+  width: 16.67%; 
+  text-align: center;
+  margin-top: 2px;
+}
+
+.experience .details {
+  flex-direction: column;
+  width: 83.33%;
+  font-size: 1rem; 
+  padding-left: 32px;
+  min-width: 260px;
+}
+
+.experience .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.experience .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 8px;
+  gap: 8px; 
+}
+
+.description-item {
+  display: flex;
+  align-items: center;
+  gap : 20px;
+}
+
+.description-item circle {
+  fill: #69b3a2;
+}

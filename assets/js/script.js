@@ -26,17 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="social-media">
       <div class="social-icon">
         <a href="https://github.com" target="_blank" class="center">
-          <img src="/assets/icons/github.png" alt="GitHub" id="GitHub" />
+          <img src="/assets/icons/githubWhite.png" alt="GitHub" id="GitHub" />
         </a>
       </div>
       <div class="social-icon">
         <a href="https://linkedin.com" target="_blank" class="center">
-          <img src="/assets/icons/linkedin.png" alt="LinkedIn"  id="LinkedIn"/>
+          <img src="/assets/icons/linkedinWhite.png" alt="LinkedIn"  id="LinkedIn"/>
         </a>
       </div>
       <div class="social-icon">
         <a href="https://twitter.com" target="_blank" class="center">
-          <img src="/assets/icons/x.png" alt="x" id="x" class="xdimension" />
+          <img src="/assets/icons/xWhite.png" alt="x" id="X" class="xdimension" />
         </a>
       </div>
     </div>

@@ -55,20 +55,33 @@ function updateThemeIcon() {
 }
 
 function updateSocialMediaIcons() {
-  const githubImg = document.getElementById("GitHub");
-  const linkedinImg = document.getElementById("LinkedIn");
-  const xImg = document.getElementById("x");
+  const githubImgs = document.querySelectorAll("#GitHub");
+  const linkedinImgs = document.querySelectorAll("#LinkedIn");
+  const xImgs = document.querySelectorAll("#X");
 
   if (!darkMode) {
-    githubImg.src = "/assets/icons/githubWhite.png";
-    linkedinImg.src = "/assets/icons/linkedinWhite.png";
-    xImg.src = "/assets/icons/xWhite.png";
+    githubImgs.forEach(img => {
+      img.src = "/assets/icons/githubWhite.png";
+    });
+    linkedinImgs.forEach(img => {
+      img.src = "/assets/icons/linkedinWhite.png";
+    });
+    xImgs.forEach(img => {
+      img.src = "/assets/icons/xWhite.png";
+    });
   } else {
-    githubImg.src = "/assets/icons/githubBlack.png";
-    linkedinImg.src = "/assets/icons/linkedinBlack.png";
-    xImg.src = "/assets/icons/xBlack.png";
+    githubImgs.forEach(img => {
+      img.src = "/assets/icons/githubBlack.png";
+    });
+    linkedinImgs.forEach(img => {
+      img.src = "/assets/icons/linkedinBlack.png";
+    });
+    xImgs.forEach(img => {
+      img.src = "/assets/icons/xBlack.png";
+    });
   }
 }
+
 
 function updateSeparator(){
   const separator = document.getElementById("separator");

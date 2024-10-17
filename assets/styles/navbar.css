@@ -96,7 +96,7 @@
 }
 
 .dark-mode .nav-link:hover {
-  color: lightgreen;
+  color: var(--green-calid);
 }
 
 .menu {

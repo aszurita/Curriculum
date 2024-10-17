@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ANGELO ZURITA</title>
+    <link rel="icon" type="image/png" href="/assets/logos/logo.png" />
+    <title>Angelo Zurita</title>
+    <meta name="copyright" content="© 2024 Angelo Zurita">
+    <meta name="author" content="Angelo Zurita">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet">
@@ -13,6 +16,8 @@
     <link rel="stylesheet" href="/assets/styles/navbar.css" />
     <link rel="stylesheet" href="/assets/styles/background.css">
     <link rel="stylesheet" href="/assets/styles/tools.css">
+    <link rel="stylesheet" href="/assets/styles/experience.css">
+    <link rel="stylesheet" href="/assets/styles/presentations.css">
   </head>
   <body>
     <header>
@@ -63,15 +68,91 @@
         <div class="tools-container" id="tools-container"></div>
         <script src="/assets/js/tools.js"></script>
       </section>
-      <section id="tools" class="paddingSection">
+      <section id="areas" class="paddingSection">
         <h2 class="titleH2">Core Competencies</h2>
         <div id="area-section"></div>
         <script src="/assets/js/areas.js"></script>
       </section>
-      <section id="Proyectos">
+      <section id="portfolio">
         <h2 class="titleH2">Projects</h2>
         <div id="projects-container"></div>
         <script src="/assets/js/projects.js"></script>
+      </section>
+      <section id="experience">
+        <h2 class="titleH2">Experience</h2>
+        <div class="containerExperience">
+          <div class="profileInfo">
+            <img src="/assets/profile/profile.jpg" alt="profileimg"
+              class="img-Profile">
+            <p class="nombre">Angelo Saul Zurita Guerrero</p>
+            <p class="info-p">Computer Science Student &nbsp;|&nbsp; Data
+              Science &nbsp;|&nbsp; Web Developer</p>
+            <p class="info-p">aszurita@espol.edu.ec</p>
+            <p
+              class="frase"><i>"Never give up without trying, because innovation distinguishes between a leader and a follower "</i></p>
+            <div class="social-media">
+              <div class="social-icon">
+                <a href="https://github.com" target="_blank" class="center">
+                  <img src="/assets/icons/githubWhite.png" alt="GitHub"
+                    id="GitHub" />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://linkedin.com" target="_blank" class="center">
+                  <img src="/assets/icons/linkedinWhite.png" alt="LinkedIn"
+                    id="LinkedIn" />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://twitter.com" target="_blank" class="center">
+                  <img src="/assets/icons/xWhite.png" alt="x" id="X"
+                    class="xdimension" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="experiences"></div>
+          <script src="/assets/js/experience.js"></script>
+        </div>
+      </section>
+      <section id="presentations">
+        <h2 class="titleH2">Presentations</h2>
+        <div class="grid-container">
+          <div class="grid-item video">
+            <video controls>
+              <source src="/assets/videos/IA.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="grid-item description">
+            <h2>Boost Your Learning with Artificial Intelligence</h2>
+            <p>
+              In this talk, I explored the power of Artificial Intelligence in
+              transforming the learning experience.
+              I started by explaining how AI tools can be used to enhance both
+              the efficiency and effectiveness of personal study routines.
+              A key focus was on creating tailored learning paths, helping
+              learners set clear goals and break them down into manageable
+              steps, using AI-driven systems.
+            </p>
+            <p>
+              Furthermore, I discussed the various AI platforms available and
+              how each can be optimized for specific tasks, highlighting the
+              strengths and use cases of each tool.
+              By incorporating real-world examples, I showed how to use AI
+              prompts to streamline the process of learning complex topics, such
+              as programming.
+              Finally, the talk emphasized the adaptability of AI in addressing
+              individual learning needs, making it possible to personalize
+              educational experiences based on the learner's unique goals and
+              preferences.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contactme">
+        <h2 class="titleH2">Contact Me</h2>
+        
       </section>
     </main>
   </body>

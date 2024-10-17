@@ -172,7 +172,7 @@ body.dark-mode {
 
 .titleH2{
   font-weight: bold;
-  padding: 10px 0px;
+  padding: 60px 0px 40px 0px;
   text-align: center;
   font-size: 3rem;
   text-align: center;
@@ -280,5 +280,5 @@ body.dark-mode {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }

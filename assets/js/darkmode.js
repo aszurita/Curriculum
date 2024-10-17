@@ -14,6 +14,7 @@ window.onload = function () {
   updateSocialMediaIcons();
   updateSeparator();
   updateBackgroundIcon();
+  updateFooter();
 };
 
 function toggleTheme() {
@@ -25,6 +26,7 @@ function toggleTheme() {
   updateSocialMediaIcons();
   updateSeparator();
   updateBackgroundIcon();
+  updateFooter();
 
   if (isMenuOpen) {
     const menu = document.getElementById("menu");

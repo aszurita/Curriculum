@@ -18,7 +18,7 @@ body.dark-mode {
 .relative {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: transparent;
   overflow: hidden;
 }
@@ -109,6 +109,7 @@ body.dark-mode {
   justify-content: center;
   align-items: center;
   gap: 10px; 
+  margin: 10px 0px;
 }
 
 .social-icon {
@@ -167,4 +168,117 @@ body.dark-mode {
   text-align: center;
   z-index: 10;
   margin-top: 300px;
+}
+
+.titleH2{
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/*Project*/
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.place-content-center {
+  justify-content: center;
+}
+
+.gap-10 {
+  gap: 20px;
+}
+
+.project {
+  min-width: 300px;
+  width: 40%;
+  flex-direction: column;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: #69B3A2;
+  color: black;
+  transition: transform 0.3s;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #69B3A2;
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-border-opacity: 1;
+  border-color: rgb(220 221 222 / var(--tw-border-opacity));
+  padding-bottom: 20px;
+}
+
+.imageProject:hover{
+  transform: scale(1.05);
+  border-radius: 2rem;
+}
+
+
+.image-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  mask-image: linear-gradient(to bottom, black 60%, transparent);
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-info .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-info .social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.project-description {
+  padding: 10px 0;
+  color: #808080;
+}
+
+#projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

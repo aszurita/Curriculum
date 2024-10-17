@@ -1,0 +1,165 @@
+.paddingSection {
+  padding: 0px 10%;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.tool{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.tool::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green-calid);
+  color: black;
+  opacity: 0.6;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.a_tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.a_tool_S{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.tool:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.img_tool{
+  width: 30px; 
+  height: 30px; 
+}
+
+
+.img_tool_S{
+  width: 20px; 
+  height: 20px; 
+}
+
+
+.p_tool {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.p_tool_S {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+
+
+#area-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  width: 400px;
+  height: 400px;
+  background-color: #F8F9FA;
+  border-radius: 10%;
+}
+
+.skills-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #69B3A2;
+}
+
+.skills-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills-name {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px 0;
+}
+
+.skills-phrase {
+  display: flex;
+  flex-direction: column;
+  color: #808080;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+
+.skills-phrase i {
+  font-style: italic;
+}
+
+.skills-phrase strong {
+  font-weight: bold;
+}
+
+
+.toolsP_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 4px;
+}

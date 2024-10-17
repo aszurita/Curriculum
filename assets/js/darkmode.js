@@ -93,6 +93,17 @@ function updateSeparator(){
   }
 }
 
+function updateFooter(){
+  const footer = document.getElementById("footer");
+  if (darkMode) {
+    footer.classList.add("light-mode-text"); 
+  } else {
+    footer.classList.add("black-mode-text");
+  }
+}
+
+
+
 function updateBackgroundIcon(){
   const socialIcons = document.querySelectorAll('.social-icon');
   socialIcons.forEach(icon => {

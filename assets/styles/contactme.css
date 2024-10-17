@@ -1,0 +1,122 @@
+.contactmeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form-box {
+  width: 40%;
+  min-width: 325px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  min-width: 325px;
+}
+
+.map-text {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.radio-item input {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0px 40px 0px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}

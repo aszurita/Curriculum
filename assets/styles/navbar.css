@@ -86,6 +86,10 @@
   color: white;
 }
 
+.dark-mode-text{
+  color: black;
+}
+
 .dark-mode .navbar {
   background-color: black;
   color: white;

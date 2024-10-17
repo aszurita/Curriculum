@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/styles/tools.css">
     <link rel="stylesheet" href="/assets/styles/experience.css">
     <link rel="stylesheet" href="/assets/styles/presentations.css">
+    <link rel="stylesheet" href="/assets/styles/contactme.css">
   </head>
   <body>
     <header>
@@ -25,7 +26,6 @@
         <div class="container">
           <a href="#home" class="logo">ANGELO ZURITA</a>
           <button class="menu-toggle" onclick="toggleMenu()">
-            <span class="sr-only">Toggle menu</span>
             <svg
               class="menu-icon"
               fill="none"
@@ -121,7 +121,6 @@
           <div class="grid-item video">
             <video controls>
               <source src="/assets/videos/IA.mp4" type="video/mp4">
-              Your browser does not support the video tag.
             </video>
           </div>
           <div class="grid-item description">
@@ -150,10 +149,88 @@
           </div>
         </div>
       </section>
-      <section id="contactme">
+      <section id="contactme" class="contactmeContainer">
         <h2 class="titleH2">Contact Me</h2>
-        
+        <div id="alert" class="alert hidden">
+          <p>Mensaje enviado correctamente.</p>
+        </div>
+        <div class="form-container">
+          <div class="form-box">
+            <form id="contactForm" class="contact-form">
+              <div>
+                <label for="full_name" class="label">Full Name</label>
+                <input type="text" id="full_name" class="input"
+                  placeholder="Full Name" required>
+              </div>
+
+              <div>
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" class="input"
+                  placeholder="Email" required>
+              </div>
+
+              <div>
+                <label for="subject" class="label">Subject</label>
+                <select id="subject" class="input">
+                  <option value="Meeting">In-person Meeting</option>
+                  <option value="Collaboration">Collaboration on
+                    Projects</option>
+                  <option value="Services">Inquiry about Services</option>
+                  <option value="Feedback">Feedback</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div id="other-subject-container" class="hidden">
+                <label for="other_subject" class="label">Other Subject</label>
+                <input type="text" id="other_subject" class="input"
+                  placeholder="Please specify">
+              </div>
+
+              <div>
+                <label for="message" class="label">Message</label>
+                <textarea id="message" rows="4" class="input"
+                  placeholder="Enter your message here" required></textarea>
+              </div>
+
+              <div class="radio-group">
+                <label class="label">Would you like to receive notifications
+                  about future projects?</label>
+                <div class="radio-item">
+                  <input type="radio" id="notify-yes" name="notify"
+                    value="yes">
+                  <label for="notify-yes">Yes</label>
+                </div>
+                <div class="radio-item">
+                  <input type="radio" id="notify-no" name="notify" value="no">
+                  <label for="notify-no">No</label>
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="btn">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="map-container">
+            <p class="map-text">In case you'd like to meet in person, we can
+              meet at ESPOL. Please contact me in advance with the subject
+              "In-person Meeting". I am available Monday to Friday from
+              <strong>9:00 AM to 3:00 PM.</strong></p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6313870475119!2d-79.9673863603391!3d-2.1456086255212727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303caf3e5c7%3A0xe44102e70bc526da!2sTAWS%20ESPOL!5e0!3m2!1ses!2sec!4v1728787306330!5m2!1ses!2sec"
+              height="350" width="500" style="border:0;" allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map"></iframe>
+          </div>
+        </div>
+        <script src="assets/js/contactme.js"></script>
       </section>
     </main>
+    <footer class="footer">
+      Copyright © 2024 &nbsp;<a className="font-bold text-green-calid"
+        href="#Home" id="footer"> Angelo Zurita </a>. All Rights Reserved.
+    </footer>
   </body>
 </html>

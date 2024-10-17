@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   Promise.all([
-    loadScript("./assets/js/particles.js"),
-    loadScript("./assets/js/stats.js"),
+    loadScript("particles.js"),
+    loadScript("stats.js"),
   ])
     .then(() => {
       if (window.particlesJS) {
